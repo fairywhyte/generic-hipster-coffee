@@ -1,28 +1,52 @@
-// .body { color: #a35b27;
 
-// }
 
-.card-title {
-    background-color: #e3d9d8;
+
+.sticky-top {
+	@media (max-width: 480px), (max-height: 480px) {
+		position: static;
+	}
 }
 
-
-
-
-.navbar {
-    background-color: #E3D9D8;
+.navbar-nav {
+	.nav-link {
+		text-decoration: none;
+	}
 }
 
-
-
-.jumbotron {
-    background-color: white;
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	text-transform: uppercase;
+	letter-spacing: 0.07em;
 }
 
-.jumbotron-fluid {
-    background-color: white;
+.navbar-brand {
+	text-align: center;
 }
 
+.ghc-logo {
+	width: 66%;
 
+	@include media-breakpoint-up(md) {
+		width: 100%;
+	}
+}
 
+.ghc-coffee-list {
+	.card {
+		@include media-breakpoint-up(sm) {
+			min-width: 25rem;
+		}
+	}
+}
+
+.ghc-mb-n-2 {
+	margin-bottom: -2*$spacer;
+}
+
+.ghc-footer {
+	.nav-link.active {
+		color: $gray-400;
+		text-decoration: none;
+	}
+}
 
