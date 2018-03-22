@@ -21,7 +21,7 @@ gulp.task('html:clean', function() {
 	return del('dist/**/*.html', { force: true });
 });
 
-// Copy all HTML files 
+// Copy all HTML files
 gulp.task('html:copy', function() {
 	return gulp.src('src/**/*.html')
 		.pipe(gulp.dest('dist/'));
